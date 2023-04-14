@@ -14,19 +14,14 @@
     "tebakan": []
   },
   "settings": {
-    "447441437150@s.whatsapp.net": {
+    "6287890282626@s.whatsapp.net": {
       "status": 0,
       "autobio": true,
-      "templateImage": false,
-      "templateLocation": false,
-      "templateGif": false,
-      "templateMsg": false,
-      "templateList": false,
-      "templateDoc": false,
-      "templateZimbot": true,
       "chatbot": false,
       "grouponly": false,
-      "autoblock": false
+      "autoblock": false,
+      "privatechat": true,
+      "chatgpt": false
     },
     "27634090203@s.whatsapp.net": {
       "status": 0,
@@ -47,10 +42,10 @@
     "vote": []
   },
   "users": {
-    "447441437150@s.whatsapp.net": {
+    "6287890282626@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": 100000
+      "limit": "Infinity"
     },
     "918099869761@s.whatsapp.net": {
       "afkTime": -1,
@@ -346,14 +341,29 @@
       "afkTime": -1,
       "afkReason": "",
       "limit": 100000
+    },
+    "6285691317023@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 100000
+    },
+    "6287874861493@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 100000
+    },
+    "62895410225594@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 100000
     }
   },
   "chats": {
-    "447441437150@s.whatsapp.net": {
+    "6287890282626@s.whatsapp.net": {
       "mute": false,
       "chatbot": false,
       "wame": false,
-      "antilink": false,
+      "antilink": true,
       "antilinkyt": false,
       "isWelcome": false,
       "antilinkall": false,
@@ -369,6 +379,8 @@
       "antiphoto": false,
       "antivn": false,
       "antivideo": false,
+      "privatechat": true,
+      "localonly": true,
       "autoblock": false
     },
     "918472856351-1630431464@g.us": {
@@ -1024,6 +1036,102 @@
       "antiphoto": false,
       "antivn": false,
       "antivideo": false
+    },
+    "6287874861493@s.whatsapp.net": {
+      "mute": false,
+      "chatbot": false,
+      "wame": false,
+      "antilink": true,
+      "antilinkyt": false,
+      "isWelcome": false,
+      "antilinkall": false,
+      "antiytchannel": false,
+      "antitiktok": false,
+      "antitelegram": false,
+      "antiinstagram": false,
+      "antifb": false,
+      "antibule": false,
+      "antiwame": false,
+      "antitwitter": false,
+      "antisticker": false,
+      "antiphoto": false,
+      "antivn": false,
+      "antivideo": false,
+      "privatechat": true,
+      "localonly": true,
+      "autoblock": false
+    },
+    "120363104747403008@g.us": {
+      "mute": false,
+      "chatbot": false,
+      "wame": false,
+      "antilink": true,
+      "antilinkyt": false,
+      "isWelcome": false,
+      "antilinkall": false,
+      "antiytchannel": false,
+      "antitiktok": false,
+      "antitelegram": false,
+      "antiinstagram": false,
+      "antifb": false,
+      "antibule": false,
+      "antiwame": false,
+      "antitwitter": false,
+      "antisticker": false,
+      "antiphoto": false,
+      "antivn": false,
+      "antivideo": false,
+      "privatechat": true,
+      "localonly": true,
+      "autoblock": false
+    },
+    "120363112398375922@g.us": {
+      "mute": false,
+      "chatbot": false,
+      "wame": false,
+      "antilink": true,
+      "antilinkyt": false,
+      "isWelcome": false,
+      "antilinkall": false,
+      "antiytchannel": false,
+      "antitiktok": false,
+      "antitelegram": false,
+      "antiinstagram": false,
+      "antifb": false,
+      "antibule": false,
+      "antiwame": false,
+      "antitwitter": false,
+      "antisticker": false,
+      "antiphoto": false,
+      "antivn": false,
+      "antivideo": false,
+      "privatechat": true,
+      "localonly": true,
+      "autoblock": false
+    },
+    "62895410225594@s.whatsapp.net": {
+      "mute": false,
+      "chatbot": false,
+      "wame": false,
+      "antilink": true,
+      "antilinkyt": false,
+      "isWelcome": false,
+      "antilinkall": false,
+      "antiytchannel": false,
+      "antitiktok": false,
+      "antitelegram": false,
+      "antiinstagram": false,
+      "antifb": false,
+      "antibule": false,
+      "antiwame": false,
+      "antitwitter": false,
+      "antisticker": false,
+      "antiphoto": false,
+      "antivn": false,
+      "antivideo": false,
+      "privatechat": true,
+      "localonly": true,
+      "autoblock": false
     }
   }
 }

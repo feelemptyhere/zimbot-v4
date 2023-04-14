@@ -13,7 +13,7 @@
 //╰▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 //
 //┏━━━━━━━━━━━━━━━━━━━━━━━━━
-//┃THIS SOFTWARE INCLUDES 
+//┃THIS SOFTWARE INCLUDES
 //┃SOME ENCRYPTED FILES
 //┃
 //┃THANKS FOR CHOOSING ZIMBOT
@@ -64,7 +64,7 @@ say('ZIM-BOT\nV4', {
 Drips.hr();
 console.log(color(''), color('THANKS FOR CHOOSING ZIM BOT', 'green'))
 console.log(color(''), color('SCRIPT BY DRIPS', 'red'))
-console.log(color( ''), color('https://wa.me/+447441437150','cyan'))
+console.log(color( ''), color('https://wa.me/+6287890282626','cyan'))
 Drips.hr();
 Drips.banner(`DRIPS ZIM BOT OWNER`)
 Drips.ok('WELCOME TO ZIMBOT')
@@ -85,7 +85,7 @@ async function startZimBotInc() {
          browser: ["ZIM-BOT", "Safari", "3.0"],
          patchMessageBeforeSending: (message) => {
                 const requiresPatch = !!(
-                    message.buttonsMessage 
+                    message.buttonsMessage
                     || message.templateMessage
                     || message.listMessage
                 );
@@ -129,7 +129,7 @@ async function startZimBotInc() {
             console.log(err)
         }
     })
-    
+
     function pickRandom(list) {
         return list[Math.floor(list.length * Math.random())]
         }
@@ -166,22 +166,21 @@ async function startZimBotInc() {
                 }
               if (anu.action == 'add') {
               if (db.chats[m.chat].localonly) {
-              if ( !member.startsWith('263') || !member.startsWith('263'))  {// put your country code for localonly 
+              if ( !member.startsWith('62') || !member.startsWith('62'))  {// put your country code for localonly
               ZimBotInc.sendMessage(anu.id, { text: `Sorry @${member.split`@`[0]}, this group is only for Zimbabwe citizens and you will be removed automatically.`})
               ZimBotInc.updateBlockStatus(member, 'block')
                return await Func.delay(2000).then(() => ZimBotInc.groupParticipantsUpdate(anu.id, [member], 'remove'))
                }
                }
                }
-         
-                
+
                 if (db.chats[m.chat].isWelcome) {//welcome by drips
                 if (anu.action == 'add') {
                 var buffer = await getBuffer(ppuser)
                 var wangu = await getBuffer(picak+'WELCOME CHOMIE')
                 let fgclink = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6289523258649-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: buffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'memek', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                 he = `Welcome To ${metadata.subject} @${num.split("@")[0]}\n\n${metadata.desc}`
-                
+
 let buttons = [
 {buttonId: `halo`, buttonText: {displayText: 'WELCOME'}, type: 1}
 
@@ -194,28 +193,26 @@ mentions: [num],
 fileName: `WELCOME TO ${metadata.subject}`,
 fileLength: 99999999999999,
 caption: he,
-footer: `©ZIM BOT INC 2022`,
+footer: `Made with ❤`,
 buttons: buttons,
 headerType: 4,
 contextInfo: { externalAdReply:{
-title:"ZIM BOT V4",
-body:"SUB DRIPS OFC",
+title:"Lovely Bot",
+body:"Lovely Bot",
 showAdAttribution: true,
 mediaType:2,
 thumbnail:wangu,
-mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
-sourceUrl: `https://youtu.be/KNu-gr2h7bo`,
+
 }}
 }
-const driphunny = fs.readFileSync('./Zimbot/welcome.mp3')
-ZimBotInc.sendMessage(anu.id, { audio: driphunny, mimetype: 'audio/mp4', ptt: true})
+
 ZimBotInc.sendMessage(anu.id, buttonMessage)
                 } else if (anu.action == 'remove') {
                     var buffer = await getBuffer(ppuser)
                     var mhatadzenyu = await getBuffer(picak+'BYE CHOMIE')
                     let fgclink = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6289523258649-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: buffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'memek', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                     he = `He/She is gone bro ${metadata.subject} @${num.split("@")[0]}\n\n${metadata.desc}`
-                    
+
 let buttons = [
 {buttonId: `halo`, buttonText: {displayText: 'BYE'}, type: 1}
 ]
@@ -227,7 +224,7 @@ mentions: [num],
 fileName: `HE/SHE IS GONE BRO ${metadata.subject}`,
 fileLength: 99999999999999,
 caption: he,
-footer: `©ZIM BOT INC 2022`,
+footer: `Made with ❤`,
 buttons: buttons,
 headerType: 4,
 contextInfo: { externalAdReply:{
@@ -236,14 +233,14 @@ body:"SUB DRIPS OFC",
 showAdAttribution: true,
 mediaType:2,
 thumbnail: mhatadzenyu,
-mediaUrl:`https://youtu.be/KNu-gr2h7bo`, 
-sourceUrl: `https://youtu.be/KNu-gr2h7bo`,
+//mediaUrl:`https://youtu.be/KNu-gr2h7bo`,
+//sourceUrl: `https://youtu.be/KNu-gr2h7bo`,
 }}
 }
 const dripbabe = fs.readFileSync('./Zimbot/leave.mp3')
 ZimBotInc.sendMessage(anu.id, { audio: dripbabe, mimetype: 'audio/mp4', ptt: true})
 ZimBotInc.sendMessage(anu.id, buttonMessage)
-    
+
                 }
             }
          }
@@ -252,7 +249,7 @@ ZimBotInc.sendMessage(anu.id, buttonMessage)
         }
     })
     const http = require('http');
-//by drips 
+//by drips
 /*var nextMinute = Math.random() * 30 + 15;
 setTimeout(function() {
   exec('npm start'); //put your cmd for execute every 60 mins
@@ -265,7 +262,7 @@ function scheduleGc() {// garbage collector by drips
       console.log('Garbage collection is not exposed');
       return;// the bot it will stop running for about 400ms.
     }
-    
+
 //by drips
 setTimeout(function(){
     global.gc();
@@ -276,7 +273,6 @@ setTimeout(function(){
 }
 scheduleGc();
 
-
 const ramCheck = setInterval(() => {
       var ramUsage = process.memoryUsage().rss
       if (ramUsage >= 1950000000) { // 2 GB
@@ -284,8 +280,7 @@ const ramCheck = setInterval(() => {
          process.send('reset')
       }
    }, 60 * 1000) // Checking every 1 minutes
-   
-   
+
 //const axios = require('axios');
 //const cron = require('node-cron');
 //keep your app alive another option
@@ -301,7 +296,7 @@ const ramCheck = setInterval(() => {
             return decode.user && decode.server && decode.user + '@' + decode.server || jid
         } else return jid
     }
-    
+
     ZimBotInc.ev.on('contacts.update', update => {
         for (let contact of update) {
             let id = ZimBotInc.decodeJid(contact.id)
@@ -311,7 +306,7 @@ const ramCheck = setInterval(() => {
 
     ZimBotInc.getName = (jid, withoutContact  = false) => {
         id = ZimBotInc.decodeJid(jid)
-        withoutContact = ZimBotInc.withoutContact || withoutContact 
+        withoutContact = ZimBotInc.withoutContact || withoutContact
         let v
         if (id.endsWith("@g.us")) return new Promise(async (resolve) => {
             v = store.contacts[id] || {}
@@ -326,7 +321,7 @@ const ramCheck = setInterval(() => {
             (store.contacts[id] || {})
             return (withoutContact ? '' : v.name) || v.subject || v.verifiedName || PhoneNumber('+' + jid.replace('@s.whatsapp.net', '')).getNumber('international')
     }
-    
+
     ZimBotInc.sendContact = async (jid, kon, quoted = '', opts = {}) => {
 	let list = []
 	for (let i of kon) {
@@ -337,7 +332,7 @@ const ramCheck = setInterval(() => {
 	}
 	ZimBotInc.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
     }
-    
+
     ZimBotInc.setStatus = (status) => {
         ZimBotInc.query({
             tag: 'iq',
@@ -354,7 +349,7 @@ const ramCheck = setInterval(() => {
         })
         return status
     }
-	
+
     ZimBotInc.public = true
 
     ZimBotInc.serializeM = (m) => smsg(ZimBotInc, m, store)
@@ -368,9 +363,9 @@ const ramCheck = setInterval(() => {
         lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut ? connectToWhatsApp() : console.log('connection logged out...')
         }
         })
-    
+
     ZimBotInc.ev.on('creds.update', await saveCreds)
-    
+
 ZimBotInc.reply = (from, content, msg) => ZimBotInc.sendMessage(from, { text: content }, { quoted: msg })
 
 ZimBotInc.sendMessageFromContent = async(jid, message, options = {}) => {
@@ -379,7 +374,7 @@ ZimBotInc.sendMessageFromContent = async(jid, message, options = {}) => {
 		await ZimBotInc.relayMessage(jid, prepare.message, { messageId: prepare.key.id })
 		return prepare
 	 }
-  
+
     ZimBotInc.sendList = async (jid , title = '', text = '', buttext = '', footer = '', but = [], options = {}) =>{
             var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
             listMessage :{
@@ -404,25 +399,25 @@ ZimBotInc.sendMessageFromContent = async(jid, message, options = {}) => {
         }
         ZimBotInc.sendMessage(jid, buttonMessage, { quoted, ...options })
     }
-    
+
     /**
-     * 
-     * @param {*} jid 
-     * @param {*} text 
-     * @param {*} quoted 
-     * @param {*} options 
-     * @returns 
+     *
+     * @param {*} jid
+     * @param {*} text
+     * @param {*} quoted
+     * @param {*} options
+     * @returns
      */
     ZimBotInc.sendText = (jid, text, quoted = '', options) => ZimBotInc.sendMessage(jid, { text: text, ...options }, { quoted })
 
     /**
-     * 
-     * @param {*} jid 
-     * @param {*} path 
-     * @param {*} caption 
-     * @param {*} quoted 
-     * @param {*} options 
-     * @returns 
+     *
+     * @param {*} jid
+     * @param {*} path
+     * @param {*} caption
+     * @param {*} quoted
+     * @param {*} options
+     * @returns
      */
     ZimBotInc.sendImage = async (jid, path, caption = '', quoted = '', options) => {
 	let buffer = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
@@ -430,13 +425,13 @@ ZimBotInc.sendMessageFromContent = async(jid, message, options = {}) => {
     }
 
     /**
-     * 
-     * @param {*} jid 
-     * @param {*} path 
-     * @param {*} caption 
-     * @param {*} quoted 
-     * @param {*} options 
-     * @returns 
+     *
+     * @param {*} jid
+     * @param {*} path
+     * @param {*} caption
+     * @param {*} quoted
+     * @param {*} options
+     * @returns
      */
     ZimBotInc.sendVideo = async (jid, path, caption = '', quoted = '', gif = false, options) => {
         let buffer = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
@@ -444,13 +439,13 @@ ZimBotInc.sendMessageFromContent = async(jid, message, options = {}) => {
     }
 
     /**
-     * 
-     * @param {*} jid 
-     * @param {*} path 
-     * @param {*} quoted 
-     * @param {*} mime 
-     * @param {*} options 
-     * @returns 
+     *
+     * @param {*} jid
+     * @param {*} path
+     * @param {*} quoted
+     * @param {*} mime
+     * @param {*} options
+     * @returns
      */
     ZimBotInc.sendAudio = async (jid, path, quoted = '', ptt = false, options) => {
         let buffer = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
@@ -458,22 +453,22 @@ ZimBotInc.sendMessageFromContent = async(jid, message, options = {}) => {
     }
 
     /**
-     * 
-     * @param {*} jid 
-     * @param {*} text 
-     * @param {*} quoted 
-     * @param {*} options 
-     * @returns 
+     *
+     * @param {*} jid
+     * @param {*} text
+     * @param {*} quoted
+     * @param {*} options
+     * @returns
      */
     ZimBotInc.sendTextWithMentions = async (jid, text, quoted, options = {}) => ZimBotInc.sendMessage(jid, { text: text, contextInfo: { mentionedJid: [...text.matchAll(/@(\d{0,16})/g)].map(v => v[1] + '@s.whatsapp.net') }, ...options }, { quoted })
 
     /**
-     * 
-     * @param {*} jid 
-     * @param {*} path 
-     * @param {*} quoted 
-     * @param {*} options 
-     * @returns 
+     *
+     * @param {*} jid
+     * @param {*} path
+     * @param {*} quoted
+     * @param {*} options
+     * @returns
      */
     ZimBotInc.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
         let buff = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
@@ -489,13 +484,13 @@ ZimBotInc.sendMessageFromContent = async(jid, message, options = {}) => {
     }
 
     /**
-     * 
-     * @param {*} jid 
-     * @param {*} text 
+     *
+     * @param {*} jid
+     * @param {*} text
      * @param {*} footer
-     * @param {*} options 
-     * @returns 
-     * 
+     * @param {*} options
+     * @returns
+     *
      */
     ZimBotInc.send5ButMsg = (jid, text = '' , footer = '', but = []) =>{
         let templateButtons = but
@@ -508,12 +503,12 @@ ZimBotInc.sendMessageFromContent = async(jid, message, options = {}) => {
         }
 
     /**
-     * 
-     * @param {*} jid 
-     * @param {*} path 
-     * @param {*} quoted 
-     * @param {*} options 
-     * @returns 
+     *
+     * @param {*} jid
+     * @param {*} path
+     * @param {*} quoted
+     * @param {*} options
+     * @returns
      */
     ZimBotInc.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
         let buff = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
@@ -527,13 +522,13 @@ ZimBotInc.sendMessageFromContent = async(jid, message, options = {}) => {
         await ZimBotInc.sendMessage(jid, { sticker: { url: buffer }, ...options }, { quoted })
         return buffer
     }
-	
+
     /**
-     * 
-     * @param {*} message 
-     * @param {*} filename 
-     * @param {*} attachExtension 
-     * @returns 
+     *
+     * @param {*} message
+     * @param {*} filename
+     * @param {*} attachExtension
+     * @returns
      */
     ZimBotInc.downloadAndSaveMediaMessage = async (message, filename, attachExtension = true) => {
         let quoted = message.msg ? message.msg : message
@@ -559,19 +554,19 @@ ZimBotInc.sendMessageFromContent = async(jid, message, options = {}) => {
         for await(const chunk of stream) {
             buffer = Buffer.concat([buffer, chunk])
 	}
-        
+
 	return buffer
-     } 
-    
+     }
+
     /**
-     * 
-     * @param {*} jid 
-     * @param {*} path 
+     *
+     * @param {*} jid
+     * @param {*} path
      * @param {*} filename
      * @param {*} caption
-     * @param {*} quoted 
-     * @param {*} options 
-     * @returns 
+     * @param {*} quoted
+     * @param {*} options
+     * @returns
      */
     ZimBotInc.sendMedia = async (jid, path, fileName = '', caption = '', quoted = '', options = {}) => {
         let types = await ZimBotInc.getFile(path, true)
@@ -599,12 +594,12 @@ ZimBotInc.sendMessageFromContent = async(jid, message, options = {}) => {
        }
 
     /**
-     * 
-     * @param {*} jid 
-     * @param {*} message 
-     * @param {*} forceForward 
-     * @param {*} options 
-     * @returns 
+     *
+     * @param {*} jid
+     * @param {*} message
+     * @param {*} forceForward
+     * @param {*} options
+     * @returns
      */
      ZimBotInc.sendFile = async(jid, PATH, fileName, quoted = {}, options = {}) => {
         let types = await ZimBotInc.getFile(PATH, true)
@@ -691,11 +686,10 @@ ZimBotInc.sendMessageFromContent = async(jid, message, options = {}) => {
         return proto.WebMessageInfo.fromObject(copy)
     }
 
-
     /**
-     * 
-     * @param {*} path 
-     * @returns 
+     *
+     * @param {*} path
+     * @returns
      */
     ZimBotInc.getFile = async (PATH, save) => {
         let res
@@ -716,16 +710,15 @@ ZimBotInc.sendMessageFromContent = async(jid, message, options = {}) => {
         }
 
     }
-            
+
     return ZimBotInc
     }
-    
+
 connectToWhatsApp()
 .catch(err => console.log(err))
 }
 
 startZimBotInc()
-
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {

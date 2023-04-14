@@ -13,7 +13,7 @@
 //╰▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 //
 //┏━━━━━━━━━━━━━━━━━━━━━━━━━
-//┃THIS SOFTWARE INCLUDES 
+//┃THIS SOFTWARE INCLUDES
 //┃SOME ENCRYPTED FILES
 //┃
 //┃THANKS FOR CHOOSING ZIMBOT
@@ -23,44 +23,42 @@
 const fs = require('fs')
 const chalk = require('chalk')
 
-
 //global apis
 global.APIs = {
-	zenz: 'https://zenzapi.xyz', 
+	zenz: 'https://zenzapi.xyz',
 }
 //global apikeys
 global.APIKeys = {
-	'https://zenzapi.xyz': '805a6c3fa9', //api keys from zenzi
+	'https://zenzapi.xyz': 'cba7d9213e', //api keys from zenzi
 }
-
 
 global.Api = new (require('./plugins/neoxrApi.js'))(process.env.API_KEY)
 
 //settings
-global.owner = ['+447441437150',''] //owner number ++447441437150
-global.wame = ['+447441437150'] 
-global.pemilik = ['+447441437150'] //owner number ++447441437150
-global.premium = ['+447441437150'] //premium number ++447441437150
-global.pengguna = 'Drips' //username
-global.footer = 'ZIM BOT INC'
-global.botnma = 'ZIM BOT INC' //bot name
-global.botname = 'ZIM BOT V4'
-global.ownernma = 'Drips' //owner name
-global.packname = 'Drips' //sticker package name
-global.author = 'By Drips Memes' //sticker author name
+global.owner = ['+6287890282626',''] //owner number ++6287890282626
+global.wame = ['+6287890282626']
+global.pemilik = ['+6287890282626'] //owner number ++6287890282626
+global.premium = ['+6287890282626'] //premium number ++6287890282626
+global.pengguna = 'user' //username
+global.footer = 'Made with ❤'
+global.botnma = 'Lovely Bot' //bot name
+global.botname = 'Made with ❤'
+global.ownernma = 'Dear' //owner name
+global.packname = 'Made with ❤' //sticker package name
+global.author = 'Made with ❤' //sticker author name
 global.sessionName = 'session' //session name
 global.prefa = ['#','!','/',''] //prefix
 global.sp = '🔵' //sp
 global.max_upload = 100
 global.dripstyping = false
-global.dripsreadgroup = false
+global.dripsreadgroup = true
 global.dripsreadall = true
-global.dripsrecord = true
-global.available = false
+global.dripsrecord = false
+global.available = true
 global.unavailable = false
 global.limittot = 100,
 global.thumb = fs.readFileSync('./Zimbot/drips.jpg')
-global.reactmoji = '🇿🇼'
+global.reactmoji = 'zw'
 global.imgjoinrpg = fs.readFileSync('./image/joinrpg.jpg')
 global.imgmining = fs.readFileSync('./image/mining.jpg')
 global.imgdevil = fs.readFileSync('./image/img/devil.jpg')
@@ -77,10 +75,10 @@ global.f5 = 'application/pdf'
 global.f6 = 'application/vnd.android.package-archive'
 global.flaming = 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=amped-logo&doScale=true&scaleWidth=800&scaleHeight=500&text='
 global.mess = {
-    success: 'Takaenda Done!',
+    success: 'Done!',
     admin: '*This feature is only for admin!*',
     botAdmin: '*zim bot  must be admin first!*',
-    owner: '*this feature is only for zimbot owner*',
+    owner: '*this feature is only for owner*',
     group: '*Feature is only for groups!*',
     grouponly: '*Group Mode Only*',
     private: 'Features Used Only For Private Chat!',
@@ -115,7 +113,6 @@ global.mehk = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=t
 global.awog = 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=amped-logo&doScale=true&scaleWidth=800&scaleHeight=500&text='
 global.mohai = 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&text='
 global.mhehe = 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text='
-
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
